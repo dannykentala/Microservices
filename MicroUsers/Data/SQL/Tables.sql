@@ -1,0 +1,12 @@
+-- Active: 1720210416483@@127.0.0.1@3306@bf4oqnb3ruqjmkuhqrhs
+CREATE TABLE Users(
+  Id INT PRIMARY KEY AUTO_INCREMENT,
+  Email VARCHAR(255) UNIQUE NOT NULL,
+  Password VARCHAR(255) NOT NULL
+);
+
+-- For email
+-- CREATE TABLE AccountCreationEmails(
+--   Id INT PRIMARY KEY AUTO_INCREMENT,
+--   UserId INT
+-- );
