@@ -1,0 +1,5 @@
+CREATE TABLE EmailLogs(
+  Id INT PRIMARY KEY AUTO_INCREMENT,
+  Email VARCHAR(125),
+  UserId INT
+);

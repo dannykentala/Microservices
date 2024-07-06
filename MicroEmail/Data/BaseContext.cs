@@ -1,4 +1,5 @@
 using MailerSendApi.Models;
+using MicroEmail.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace MicroEmail.Data
@@ -11,6 +12,6 @@ namespace MicroEmail.Data
 
     // Remember that model is singular, and table is plural
     // DbSet<Model> SqlTable
-    public DbSet<Recipent> Recipents {get; set;}
+    public DbSet<EmailLog> EmailLogs {get; set;}
   }
 }
