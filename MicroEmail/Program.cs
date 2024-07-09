@@ -1,5 +1,6 @@
 using MailerSendApi;
 using MicroEmail.Data;
+using MicroEmail.Services.Emails;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +23,8 @@ builder.Services.AddDbContext<BaseContext> ( options =>
 // Repository injection
 //----- Libraries injection
 builder.Services.AddScoped<MailerSendService>();
+
+builder.Services.AddScoped<IEmailRepository, EmailRepository>();
 
 //----- END PERSONAL SERVICES -----//
 
